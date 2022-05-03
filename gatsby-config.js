@@ -22,16 +22,6 @@ const plugins = [
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `configs`,
-        remote: `https://github.com/nf-core/configs`,
-        branch: `master`,
-        // Only import the docs folder from a codebase.
-        patterns: `docs/**`
-      }
-    },
-    {
-      resolve: `gatsby-source-git`,
-      options: {
         name: `site`,
         remote: `https://github.com/nf-core/nf-co.re.git`,
         branch: `master`,
