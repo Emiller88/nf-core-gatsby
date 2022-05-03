@@ -26,7 +26,7 @@ const plugins = [
         remote: `https://github.com/nf-core/nf-co.re.git`,
         branch: `master`,
         // Only import the docs folder from a codebase.
-        patterns: `markdown/**`
+        patterns: [`markdown/*`, `!markdown/about.md`, `!markdown/publications.md`]
       }
     },
   {
