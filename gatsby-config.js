@@ -29,6 +29,16 @@ const plugins = [
         patterns: `docs/**`
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `site`,
+        remote: `https://github.com/nf-core/nf-co.re.git`,
+        branch: `master`,
+        // Only import the docs folder from a codebase.
+        patterns: `markdown/**`
+      }
+    },
   {
     resolve: 'gatsby-plugin-mdx',
     options: {
